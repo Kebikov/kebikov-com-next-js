@@ -1,0 +1,28 @@
+@import '../../scss/variables.scss';
+
+
+.wed-center {
+    width: 100%;
+
+    flex: 1 1 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.wedding-series {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    container-type: inline-size;
+    container-name: series;
+}

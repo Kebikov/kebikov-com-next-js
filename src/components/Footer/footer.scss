@@ -1,0 +1,69 @@
+@import '../../scss/variables.scss';
+@import '../../scss/mixin.scss';
+
+.footer {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    margin: 30px 0px 20px 0px;
+
+    // .footer__icon
+    &__icon {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: center;
+        gap: 30px;
+        margin: 0px 0px 10px 0px;
+        @media (max-width: 760px){ 
+            gap: 20px;
+        }
+    }
+
+    // .footer__img
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    // .footer__icon-link
+    &__link {
+        display: flex;
+        align-self: center;
+        width: 38px;
+        height: 38px;
+        background-color: var(--color-green__to__color-orange);
+        mask-repeat: no-repeat;
+        mask-size: contain;
+    }
+
+    &__text {
+        font-size: clamp(14px, .8vw, 16px);
+        font-family: 'Mont';
+        color: var(--color-green__to__color-orange);
+        text-align: center;
+    }
+}
+
+
+.telegram {
+    width: 32px;
+    height: 32px;
+    mask-image: url('../../resources/images/footer/telegram.png');
+}
+
+.viber {
+    width: 35px;
+    height: 35px;
+    mask-image: url('../../resources/images/footer/viber.png');
+}
+
+.instagram {
+    width: 35px;
+    height: 35px;
+    mask-image: url('../../resources/images/footer/insta.png');
+}
+
+.tel {
+    mask-image: url('../../resources/images/footer/tel.png');
+}

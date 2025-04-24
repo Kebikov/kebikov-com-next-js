@@ -1,0 +1,83 @@
+@import '../../scss/variables.scss';
+
+.all-title {
+    // .all-title__line
+    &__line {
+        border-bottom: 2px solid var(--color-gold);
+        width: 100%;
+    }
+
+    // .all-title__text
+    &__text {
+        font-family: 'Streamster';
+        color: var(--color-bark-green__to__color-light-2);
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 140%;
+        text-align: center;
+        padding: 10px 0px 10px 0px;
+    }
+}
+
+.photo {
+    max-width: $size-tablet;
+    margin: 20px auto 0px auto;
+    & img{
+        object-fit: cover;
+        width: 100%;
+        margin-bottom: 6px;
+        @media (max-width: 1910px){
+            margin-bottom: calc(3px + 3 * (100vw - 375px) / 1535);
+        }
+        @media (max-width: 375px){
+            margin-bottom: 3px;
+        }
+    }
+}
+
+.anime{
+    position: relative;
+    animation: fade infinite 3s;
+}
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.wedding-description {
+    margin-top: 20px;
+    width: 100%;
+    padding: 0 10px 0 10px;
+    
+    display: flex;
+    justify-content: center;
+    &__body {
+        max-width: $size-tablet;
+    }
+
+    & p {
+        font-family: 'Hand';
+        font-size: 24px;
+        color: var(--color-black-2__to__color-light-2);
+        line-height: 130%;
+    }
+}
+
+.still-weddings {
+    margin-top: 40px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    &__body {
+        width: 100%;
+        max-width: 1400px;
+    }
+}

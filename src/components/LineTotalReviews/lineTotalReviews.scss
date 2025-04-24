@@ -1,0 +1,28 @@
+.reviews-total {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    @media (max-width: 1200px){
+        display: none;
+    }
+
+    // .reviews-total__body
+    &__body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // .reviews-total__line
+    &__line {
+        height: 5px;
+        width: 30px;
+        background-color: var(--color-green__30__to__color-orange__30);
+        margin: 0px 3px 0px 3px;
+    }
+}
+
+.full-color{
+    background-color: var(--color-green__to__color-orange);
+}

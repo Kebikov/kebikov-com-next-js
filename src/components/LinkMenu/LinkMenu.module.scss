@@ -1,0 +1,49 @@
+.ps_line {
+    padding: 3px 0 3px 0;
+
+    & p {
+        transition: transform .5s ease;
+    }
+
+    &:hover p{
+        transform: translateY(-5px);
+    }
+}
+
+.mob_line {
+    padding: 0px 0px 30px 0px;
+
+    & p {
+        transition: transform .5s ease;
+    }
+
+    &:hover p{
+        transform: translateX(10px);
+    }
+
+}
+
+.mob_link {
+    font-family: 'Mont';
+    font-size: clamp(15px, .8vw, 17px);
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 140%;
+    color: var(--color-bark-green__to__color-light-2);
+}
+
+.pc_link {
+    font-family: 'Mont';
+    color: var(--color-bark-green__to__color-light-2);
+    font-size: clamp(13px, .8vw, 17px);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.activeLink {
+    text-decoration: underline 2px var(--color-green__to__color-orange) !important;
+    text-underline-offset: 4px;
+}

@@ -1,0 +1,9 @@
+{
+	"2.jpg": {
+		"src": "/test/2.jpg",
+		"alt": "свадебная фотография",
+		"width": 1200,
+		"height": 896,
+		"blurDataURL": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAADCAIAAAA7ljmRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAMElEQVR4nGMwlOSp99WI12FOMxNi+P/ty972+On5oTlBLgwnjh5T5WQwVlXkYhUGAADSDIyE8fzJAAAAAElFTkSuQmCC"
+	}
+}

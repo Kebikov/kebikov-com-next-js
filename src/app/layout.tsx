@@ -1,6 +1,10 @@
+import "../scss/globals.scss";
 import type { Metadata } from "next";
 import { Hand, Mont } from "@/source/font";
-import "../scss/globals.scss";
+import WrapperProviderRedux from "@/components/WrapperProviderRedux/WrapperProviderRedux";
+import WrapperTheme from "@/components/WrapperTheme/WrapperTheme";
+import Header from "@/components/Header/Header";
+
 
 
 export const metadata: Metadata = {
@@ -36,7 +40,14 @@ export default function RootLayout({
     return (
         <html lang="ru">
             <body className={`${Hand.className} ${Mont.className}`}>
-                {children}
+                <WrapperProviderRedux> 
+                    <WrapperTheme>
+                        <div className="wrapper" >
+                            <Header/>
+                            {children}
+                        </div>
+                    </WrapperTheme>
+                </WrapperProviderRedux>
             </body>
         </html>
     );
