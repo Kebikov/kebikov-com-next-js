@@ -1,16 +1,14 @@
 "use client";
 
-import styles from  './MenuPc.module.scss';
+import styles from  './MenuDesktop.module.scss';
 import LinkMenu from '../LinkMenu/LinkMenu';
-import logoWhite from '@image/logo/logo-white.png';
-import logoBlack from '@image/logo/logo-black.png';
-import menuData from '../../data/DataLinks';
+import menuData from '../../data/dataLinks';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useAppSelector } from '@/redux/store/hooks';
 
 
-const MenuPc = () => {
+const MenuDesktop = () => {
 
     const currentTheme = useAppSelector(state => state.indexSlice.theme);
 
@@ -24,7 +22,13 @@ const MenuPc = () => {
                     <LinkMenu data={menuData.aboutMe} />
                 </ul>
                 <Link href={'/'} className={styles.logo} >
-                    <Image src={currentTheme === "dark" ? logoWhite : logoBlack} height="80" width="153" alt="логотип свадебного фотографа" />
+                    <Image 
+                        src={currentTheme === "dark" ? '/source/logo/logo-white.png' : '/source/logo/logo-black.png'} 
+                        width={500}
+                        height={235}
+                        priority
+                        alt="логотип свадебного фотографа" 
+                    />
                 </Link>
                 <ul className={styles.right}>
                     <LinkMenu data={menuData.reviews} />
@@ -37,4 +41,4 @@ const MenuPc = () => {
 }
 
 
-export default MenuPc;
+export default MenuDesktop;

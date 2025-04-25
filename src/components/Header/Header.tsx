@@ -2,7 +2,7 @@
 
 import styles from './Header.module.scss';
 import MenuMobile from '../MenuMobile/MenuMobile';
-import MenuPc from '../MenuPc/MenuPc';
+import MenuDesktop from '../MenuDesktop/MenuDesktop';
 import { useAppSelector } from '@/redux/store/hooks';
 
 
@@ -12,7 +12,7 @@ const Header = () => {
 
     return(
         <header className={styles.header} >
-            <MenuPc/>
+            <MenuDesktop/>
             <MenuMobile/>
             {lineHeader ? <div className={styles.bottomLine} /> : null}
         </header>

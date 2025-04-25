@@ -1,4 +1,3 @@
 export const foldersForChache: Array<string> = [
-    'test',
-    'wedding/main-page'
+    'source/wedding/main-page'
 ]
