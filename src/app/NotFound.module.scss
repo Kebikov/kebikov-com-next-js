@@ -1,0 +1,42 @@
+.notFound {
+    flex: 1 1 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body {
+    flex: 0 1 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 700px){
+        flex-wrap: wrap;
+    }
+
+    & img{
+        width: 200px;
+        height: auto;
+        @media (max-width: 700px){
+            width: 150px;
+        }
+    }
+}
+
+
+.text {
+    font-size: clamp(20px, 1.2vw, 30px);
+    font-family: 'Mont';
+    font-weight: 700;
+    color: var(--color-bark-green__to__color-light-2);
+    text-align: center;
+    line-height: 140%;
+
+    @media (max-width: 700px){
+        flex: 0 1 100%;
+    }
+}

@@ -26,6 +26,7 @@ const MenuDesktop = () => {
                         src={currentTheme === "dark" ? '/source/logo/logo-white.png' : '/source/logo/logo-black.png'} 
                         width={500}
                         height={235}
+                        sizes='256px'
                         priority
                         alt="логотип свадебного фотографа" 
                     />
