@@ -14,7 +14,7 @@ const MenuDesktop = () => {
 
     return(
         <div className={styles.menuDesktop}>
-            <div className={styles.body}>
+            <nav className={styles.body}>
                 <ul className={styles.left}>
                     <LinkMenu data={menuData.main} />
                     <LinkMenu data={menuData.weddings} />
@@ -36,7 +36,7 @@ const MenuDesktop = () => {
                     <LinkMenu data={menuData.praice} />
                     <LinkMenu data={menuData.contacts} />
                 </ul>
-            </div>
+            </nav>
         </div>
     )
 }

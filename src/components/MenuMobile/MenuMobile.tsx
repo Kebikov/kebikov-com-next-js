@@ -11,13 +11,12 @@ import Burger from '@/components/Burger/Burger';
 import clsx from 'clsx';
 
 
-const menuMobileile = () => {
+const MenuMobileile = () => {
 
     const activeMenu = useAppSelector(state => state.indexSlice.activeMenu);
     const dispatch = useDispatch();
 
     const onBurger = () => dispatch(SET_ACTIVE_MENU(!activeMenu));
-    console.log('activeMenu = ', activeMenu);
 
     const ButtonClear = () => (
         <button 
@@ -39,7 +38,7 @@ const menuMobileile = () => {
     return(
         <>
             <Burger activeMenu={activeMenu} onClick={onBurger} />
-            <div className={clsx(styles.menuMobile, activeMenu && styles.menuMobileActive)}>
+            <nav className={clsx(styles.menuMobile, activeMenu && styles.menuMobileActive)}>
                 <ul>
                     <div className={styles.close} onClick={onBurger} />
                     <LinkMenu data={menuData.main} mobile />
@@ -57,12 +56,12 @@ const menuMobileile = () => {
                     :
                     null
                 }
-            </div>
+            </nav>
         </>
     )
 }
 
-export default menuMobileile;
+export default MenuMobileile;
 
 
 

@@ -12,9 +12,9 @@ const Footer = () => {
                 <a href={"viber://chat?number=%2B375296949843"} className={clsx(styles.link, styles.viber)} />
                 <a href={"https://t.me/Eugene_Ghionis"} className={clsx(styles.link, styles.telegram)} />
             </div>
-            <div className={styles.text}>
+            <h2 className={styles.text}>
                 © свадебный фотограф Евгений Кебиков | Минск, Европа
-            </div>
+            </h2>
         </footer>
     )
 }

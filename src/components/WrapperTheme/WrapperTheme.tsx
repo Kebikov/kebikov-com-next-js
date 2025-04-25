@@ -14,7 +14,6 @@ const WrapperTheme = ({
     const dispatch = useAppDispatch();
 
     useEffect(() => {
-        console.log('WrapperTheme');
         const theme = Theme.getThemeLocalStorage();
         const isDarkTheme = Theme.isDarkTheme();
 
