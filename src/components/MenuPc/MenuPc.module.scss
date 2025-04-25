@@ -1,4 +1,4 @@
-.header_pc {
+.menuDesktop {
     width: 100%;
     height: auto;
     position: relative;
@@ -7,63 +7,63 @@
     @media (max-width: 1260px){
         z-index: 2;
     }
+}
 
-    &__body{
-        display: grid;
-        grid-template-columns: 1fr 240px 1fr;
+.body{
+    display: grid;
+    grid-template-columns: 1fr 240px 1fr;
 
-        margin: 0px auto 10px auto;
+    margin: 0px auto 10px auto;
 
-        position: relative;
+    position: relative;
 
-        @media (max-width: 1260px){
-            grid-template-columns: auto;
-        }
+    @media (max-width: 1260px){
+        grid-template-columns: auto;
     }
+}
 
-    // .header-pc__left
-    &__left {
-        justify-self: end;
-        align-self: self-end;
+.left {
+    justify-self: end;
+    align-self: self-end;
 
-        display: flex;
-        column-gap: 30px;
+    display: flex;
+    column-gap: 30px;
 
-        padding: 0px 0px 7px 0px;
+    padding: 0px 0px 7px 0px;
 
-        @media (max-width: 1260px){
-            display: none;
-        }
+    @media (max-width: 1260px){
+        display: none;
     }
+}
 
-    // .header-pc__logo
-    &__logo {
-        justify-self: center;
-        align-self: self-end;
 
-        & img{
-            opacity: .85;
-            object-fit: cover;
+.right {
+    justify-self: start;
+    align-self: self-end;
+
+    display: flex;
+    column-gap: 30px;
+
+    padding: 0px 0px 7px 0px;
+    @media (max-width: 1260px){
+        display: none;
+    }
+}
+
+
+.logo {
+    justify-self: center;
+    align-self: self-end;
+
+    & img{
+        opacity: .85;
+        object-fit: cover;
+        height: 80px;
+        width: auto;
+        @media (max-width: 1200px){
+            margin: 10px 0px 0px 0px;
             height: 80px;
-            width: auto;
-            @media (max-width: 1200px){
-                margin: 10px 0px 0px 0px;
-                height: 80px;
-            }
-        }
-    }
-
-    // .header-pc__right
-    &__right {
-        justify-self: start;
-        align-self: self-end;
-
-        display: flex;
-        column-gap: 30px;
-
-        padding: 0px 0px 7px 0px;
-        @media (max-width: 1260px){
-            display: none;
         }
     }
 }
+

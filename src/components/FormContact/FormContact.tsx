@@ -1,3 +1,5 @@
+"use client";
+
 import './formContact.scss';
 import EmailAnime from '../emailAnime/EmailAnime';
 import { useState } from 'react';

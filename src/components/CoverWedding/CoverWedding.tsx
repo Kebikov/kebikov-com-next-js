@@ -1,10 +1,10 @@
 import './coverWedding.scss';
 import '../WeddingSeries/weddingSeries.scss';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import ImageWedding from '../ImageWedding/ImageWedding';
 import { FC } from 'react';
 import type { IImageWedding } from '@/data/image/weddings/types';
-import type { InameSeries } from '@/pages/data/dataSeries';
+import type { InameSeries } from '@/data/dataSeries';
 
 
 interface ICoverWedding {
@@ -22,8 +22,8 @@ const CoverWedding: FC<ICoverWedding> = ({
 
     return(
         <Link 
-            className="coverWedding" 
-            to={`/weddings-all/${nameSeries.link}`} 
+            className="coverWedding"
+            href={`/weddings-all/${nameSeries.link}`} 
         >
             <div className="coverWedding__item" >
                 <ImageWedding item={imgObject} infoTest='CoverWedding' />

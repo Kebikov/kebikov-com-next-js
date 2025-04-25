@@ -4,6 +4,7 @@ import { Hand, Mont } from "@/source/font";
 import WrapperProviderRedux from "@/components/WrapperProviderRedux/WrapperProviderRedux";
 import WrapperTheme from "@/components/WrapperTheme/WrapperTheme";
 import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
 
 
@@ -44,7 +45,10 @@ export default function RootLayout({
                     <WrapperTheme>
                         <div className="wrapper" >
                             <Header/>
-                            {children}
+                            <main className="main" >
+                                {children}
+                            </main>
+                            <Footer/>
                         </div>
                     </WrapperTheme>
                 </WrapperProviderRedux>

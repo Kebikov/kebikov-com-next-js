@@ -1,0 +1,62 @@
+.footer {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    margin: 30px 0px 20px 0px;
+}
+
+.img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.link {
+    display: flex;
+    align-self: center;
+    width: 38px;
+    height: 38px;
+    background-color: var(--color-green__to__color-orange);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+}
+
+.text {
+    font-size: clamp(14px, .8vw, 16px);
+    font-family: 'Mont';
+    color: var(--color-green__to__color-orange);
+    text-align: center;
+}
+
+.icon {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 30px;
+    margin: 0px 0px 10px 0px;
+    @media (max-width: 760px){ 
+        gap: 20px;
+    }
+}
+
+.telegram {
+    width: 32px;
+    height: 32px;
+    mask-image: url('../../../public/source/footer/telegram.png');
+}
+
+.viber {
+    width: 35px;
+    height: 35px;
+    mask-image: url('../../../public/source/footer/viber.png');
+}
+
+.instagram {
+    width: 35px;
+    height: 35px;
+    mask-image: url('../../../public/source/footer/insta.png');
+}
+
+.tel {
+    mask-image: url('../../../public/source/footer/tel.png');
+}

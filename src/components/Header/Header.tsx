@@ -11,7 +11,7 @@ const Header = () => {
     const lineHeader = useAppSelector(state => state.indexSlice.lineHeader);
 
     return(
-        <header className={styles.header}>
+        <header className={styles.header} >
             <MenuPc/>
             <MenuMobile/>
             {lineHeader ? <div className={styles.bottomLine} /> : null}

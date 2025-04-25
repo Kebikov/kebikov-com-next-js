@@ -1,17 +1,18 @@
-import './footer.scss';
+import styles from './Footer.module.scss';
+import clsx from 'clsx';
 
 
 const Footer = () => {
 
     return(
-        <footer className="footer">
-            <div className="footer__icon">
-                <a href={"tel:+375296949843"} className="footer__link tel" />
-                <a href={"http://instagram.com/_u/kebikov"} className="footer__link instagram" />
-                <a href={"viber://chat?number=%2B375296949843"} className="footer__link viber" />
-                <a href={"https://t.me/Eugene_Ghionis"} className="footer__link telegram" />
+        <footer className={styles.footer}>
+            <div className={styles.icon}>
+                <a href={"tel:+375296949843"} className={clsx(styles.link, styles.tel)} />
+                <a href={"http://instagram.com/_u/kebikov"} className={clsx(styles.link, styles.instagram)} />
+                <a href={"viber://chat?number=%2B375296949843"} className={clsx(styles.link, styles.viber)} />
+                <a href={"https://t.me/Eugene_Ghionis"} className={clsx(styles.link, styles.telegram)} />
             </div>
-            <div className="footer__text">
+            <div className={styles.text}>
                 © свадебный фотограф Евгений Кебиков | Минск, Европа
             </div>
         </footer>

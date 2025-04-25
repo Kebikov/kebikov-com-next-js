@@ -1,5 +1,6 @@
 import styles from './Burger.module.scss';
 import { FC } from "react";
+import clsx from 'clsx';
 
 
 interface IBurger {
@@ -13,7 +14,7 @@ const Burger: FC<IBurger> = ({
     onClick
 }) => {
     return(
-        <div className={activeMenu ? `${styles.burger} active` : styles.burger}>
+        <div className={clsx(styles.burger, activeMenu && styles.burgerActive)}>
             <div className={activeMenu ? `${styles.burger__body} active` : styles.burger__body} onClick={onClick}>
                 <div className={styles.burger__line} />
             </div>

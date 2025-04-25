@@ -15,18 +15,18 @@ const MenuPc = () => {
     const currentTheme = useAppSelector(state => state.indexSlice.theme);
 
     return(
-        <div className={styles.header_pc}>
-            <div className={styles.heder_pc__body}>
-                <ul className={styles.heder_pc__left}>
+        <div className={styles.menuDesktop}>
+            <div className={styles.body}>
+                <ul className={styles.left}>
                     <LinkMenu data={menuData.main} />
                     <LinkMenu data={menuData.weddings} />
                     <LinkMenu data={menuData.articles} />
                     <LinkMenu data={menuData.aboutMe} />
                 </ul>
-                <Link href={'/'} className={styles.header_pc__logo} >
+                <Link href={'/'} className={styles.logo} >
                     <Image src={currentTheme === "dark" ? logoWhite : logoBlack} height="80" width="153" alt="логотип свадебного фотографа" />
                 </Link>
-                <ul className={styles.heder_pc__right}>
+                <ul className={styles.right}>
                     <LinkMenu data={menuData.reviews} />
                     <LinkMenu data={menuData.praice} />
                     <LinkMenu data={menuData.contacts} />

@@ -1,5 +1,6 @@
 @use '../../scss/variables.scss' as *;
 
+
 .burger {
     background-color: #ffffff2b;
     width: 50px;
@@ -14,14 +15,6 @@
 
     margin: -70px 0px 20px 0px;
 
-    &.fixed {
-        top: 85px;
-    }
-    &.active{
-        opacity: 0;
-        visibility: hidden;
-        transition-delay: 0s;
-    }
     @media (max-width: 1200px){
         visibility: visible;
     }
@@ -65,5 +58,11 @@
             background-color: var(--color-bark-green__to__color-orange);
         }
     }
+}
+
+.burgerActive{
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 0s;
 }
 
