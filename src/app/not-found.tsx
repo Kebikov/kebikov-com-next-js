@@ -1,7 +1,8 @@
-import styles from './NotFound.module.scss';
+import styles from './scss/NotFound.module.scss';
 import Image from 'next/image';
 
 const NotFound = () => {
+    
     return(
         <div className={styles.notFound}>
             <div className={styles.body}>

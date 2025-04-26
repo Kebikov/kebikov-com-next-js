@@ -13,4 +13,4 @@ export interface IImageCache {
 
 
 export type TChacheJSON = Record<string, IImageCache>
-//                        '1.jpg' ^
+//                             '1' ^

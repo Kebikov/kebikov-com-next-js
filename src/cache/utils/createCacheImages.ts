@@ -33,6 +33,8 @@ async function createCacheImages (
         const arrayImages = fs.readdirSync(pathToFolder);
         const cacheJSON = await iterateImages(arrayImages, pathToFolder, currentPath);
         saveToJSON(cacheJSON, currentPath);
+    } else {
+        console.info('❌ Folder not found!');
     }
 }
 
@@ -58,7 +60,7 @@ async function iterateImages(
             blurDataURL: base64
         }
         
-        cacheJSON[img] = imageChache;
+        cacheJSON[img.split('.')[0]] = imageChache;
     }
 
     return cacheJSON;

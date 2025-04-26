@@ -1,4 +1,5 @@
 import "../scss/globals.scss";
+import styles from './scss/layout.module.scss';
 import type { Metadata } from "next";
 import { Hand, Mont } from "@/source/font";
 import WrapperProviderRedux from "@/components/WrapperProviderRedux/WrapperProviderRedux";
@@ -43,9 +44,9 @@ export default function RootLayout({
             <body className={`${Hand.className} ${Mont.className}`}>
                 <WrapperProviderRedux> 
                     <WrapperTheme>
-                        <div className="wrapper" >
+                        <div className={styles.wrapper} >
                             <Header/>
-                            <main className="main" >
+                            <main className={styles.main} >
                                 {children}
                             </main>
                             <Footer/>

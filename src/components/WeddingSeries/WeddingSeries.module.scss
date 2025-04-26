@@ -1,0 +1,21 @@
+$gap: 12px;
+$media: 711px;
+
+
+.weddingSeries {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: $gap;
+
+    container-type: inline-size;
+    container-name: series;
+
+    padding: $gap;
+
+    @media (max-width: $media){
+        padding: 0;
+    }
+}
+
