@@ -29,6 +29,9 @@ const LinkMenu: FC<ILinkMenu> = ({
 
     const isActive = pathname === data.path;
 
+    console.log(pathname);
+    console.log('data.path = ', data.path);
+
     return(
         <li className={mobile ? styles.mob_line : styles.ps_line}>
             <Link 

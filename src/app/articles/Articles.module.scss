@@ -1,0 +1,51 @@
+@use '../../scss/variables.scss' as *;
+
+
+.article {
+    margin: 40px auto 40px auto;
+    padding: 0 20px 0 20px;
+    max-width: $container-width;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, auto));
+    gap: 20px 20px;
+
+    @media (max-width: 2000px) {
+        max-width: 1200px;
+    }
+}
+
+.title {
+    margin: 40px auto 0 auto;
+}
+
+.text {
+    text-align: center;
+    position: relative;
+
+    font-family: 'Mont';
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color-bark-green__to__color-light-2);
+    letter-spacing: 1.4px;
+    @media (max-width: 1000px) {
+        font-size: 18px;
+    }
+
+    &::before {
+        content: '';
+        background: url(../../../public/source/articles/mainPage/Flov.png) 50% / cover no-repeat;
+        position: absolute;
+        top: -194%;
+        left: 47%;
+        height: 50px;
+        width: 50px;
+
+        @media (max-width: 1000px) {
+            top: -167%;
+            left: 48.5%;
+            height: 35px;
+            width: 35px;
+        }
+    }
+}

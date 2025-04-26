@@ -1,0 +1,70 @@
+.article {
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background-color: var(--color-light-2__to__color-black-2);
+        height: 100%;
+    }
+}
+
+.title {
+    font-family: 'Mont';
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: var(--color-green__to__color-orange);
+    padding: 20px 20px 20px 20px;
+}
+
+.subtitle {
+    font-family: 'Mont';
+    font-size: clamp(15px, .8vw, 17px);
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--color-bark-green__to__color-light-2);
+    padding: 20px 20px 20px 20px;
+    flex: 1 1 auto;
+}
+
+.img {
+    padding-bottom: 50%;
+    overflow: hidden;
+    position: relative;
+
+    &:hover img {
+        transform: scale(1.15);
+    }
+
+    & img {
+        position: absolute;
+        top: -30%;
+        left: 0;
+        z-index: 2;
+        transition: all 0.5s ease;
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.button {
+    padding: 20px 0px 40px 20px;
+
+    &:hover .article__button span {
+        padding: 12px 23px 12px 23px;
+    }
+}
+
+.link {
+    font-family: 'Mont';
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--color-light-2__to__color-black-2);
+
+    background-color: var(--color-green__to__color-orange);
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+}

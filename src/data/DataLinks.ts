@@ -12,27 +12,27 @@ const menuData: TMenuData = {
         title: 'Главная'
     },
     weddings: {
-        path: 'weddings-all',
+        path: '/weddings-all',
         title: 'Свадебные серии',
     },
     articles: {
-        path: 'articles',
+        path: '/articles',
         title: 'Статьи'
     },
     aboutMe: {
-        path: 'about-me',
+        path: '/about-me',
         title: 'Обо мне'
     },
     reviews: {
-        path: 'reviews',
+        path: '/reviews',
         title: 'Отзывы клиентов'
     },
     praice: {
-        path: 'price-packages',
+        path: '/price-packages',
         title: 'Пакеты услуг'
     },
     contacts: {
-        path: 'contacts',
+        path: '/contacts',
         title: 'Контакты'
     }
 };
