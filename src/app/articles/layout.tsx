@@ -1,24 +1,14 @@
 import type { Metadata } from "next";
+import createMetadata from "@/utils/createMetadata";
 
 
-export const metadata: Metadata = {
+export const metadata = createMetadata({
     title: "Статьи свадебной тематики.",
     description: "Подборка статей, которые помогут вам лучше подготовится к свадебному дню.Статьи свадебной тематики покажут вам типичные ошибки молодожен.",
-    openGraph: {
-        title: 'Статьи свадебной тематики.',
-        description: 'Подборка статей, которые помогут вам лучше подготовится к свадебному дню.Статьи свадебной тематики покажут вам типичные ошибки молодожен.',
-        url: 'https://kebikov.com/articles',
-        siteName: 'kebikov.com',
-        images: [
-            {
-                url: `http://localhost:3000/opengraph/articles.jpg`,
-                width: 1200,
-                height: 630,
-                alt: 'Статьи свадебной тематики'
-            }
-        ]
-    }
-};
+    url: 'https://kebikov.com/articles',
+    nameImageOpenGraph: 'articles.jpg',
+    alt: 'Статьи свадебной тематики'
+});
 
 
 export default function Layout({

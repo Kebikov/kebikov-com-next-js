@@ -14,6 +14,8 @@ p + p {
     color: var(--color-green__to__color-orange);
     font-size: clamp(26px, 1.8vw, 30px);
     font-weight: 600;   
+    initial-letter: 2 2; // сколько строк должна занимать и на сколько строк опустить букву
+    padding-right: 4px;
 }
 
 .backgroundForText {

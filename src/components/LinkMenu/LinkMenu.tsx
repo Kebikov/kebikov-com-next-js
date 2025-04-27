@@ -22,15 +22,9 @@ const LinkMenu: FC<ILinkMenu> = ({
 }) => {
 
     const pathname = usePathname();
-
     const dispatch = useAppDispatch();
-
     const onClick = () => dispatch(SET_ACTIVE_MENU(false));
-
     const isActive = pathname === data.path;
-
-    console.log(pathname);
-    console.log('data.path = ', data.path);
 
     return(
         <li className={mobile ? styles.mob_line : styles.ps_line}>

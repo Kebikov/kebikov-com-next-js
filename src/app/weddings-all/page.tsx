@@ -1,26 +1,15 @@
 import styles from './WeddingsAll.module.scss';
 import WeddingSeries from "@/components/WeddingSeries/WeddingSeries";
-import { Metadata } from 'next';
+import createMetadata from '@/utils/createMetadata';
 
 
-export const metadata: Metadata = {
+export const metadata = createMetadata({
     title: "Серии свадебных фотографий.",
     description: "На этой странице вы найдёте подборку свадебных фотосессий. Каждая история — это не просто фотографии, а живая хроника чувств, улыбок, волнительных взглядов и трогательных моментов.",
-    openGraph: {
-        title: 'Серии свадебных фотографий.',
-        description: 'На этой странице вы найдёте подборку свадебных фотосессий. Каждая история — это не просто фотографии, а живая хроника чувств, улыбок, волнительных взглядов и трогательных моментов.',
-        url: 'https://kebikov.com/weddings-all',
-        siteName: 'kebikov.com',
-        images: [
-            {
-                url: `http://localhost:3000/opengraph/weddings-all.jpg`,
-                width: 1200,
-                height: 630,
-                alt: 'свабебная фотография'
-            }
-        ]
-    }
-};
+    url: 'https://kebikov.com/weddings-all',
+    nameImageOpenGraph: 'bouquetRoll.jpg',
+    alt: 'Способы Бросить Букет Невесты'
+});
 
 
 const WeddingsAll = () => {
