@@ -1,0 +1,15 @@
+@use '../../../scss/variables.scss' as *;
+
+
+.fromThePhotographer {
+    width: 100%;
+    padding: 0px 10px 20px 10px;
+
+    display: flex;
+    justify-content: center;
+
+    &__body {
+        max-width: 1200px;
+    }
+}
+
