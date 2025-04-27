@@ -9,9 +9,6 @@ import { setLineHeader } from '@/redux/slice/indexSlice';
 import { Metadata } from 'next';
 
 
-
-
-
 const Articles = () => {
 
     const dispatch = useDispatch();
@@ -23,6 +20,14 @@ const Articles = () => {
             dispatch(setLineHeader(false));
         }
     },[]);
+
+    const Div = () => (
+        <div style={{
+            width: '100%',
+            height: '100px',
+            backgroundColor: 'blue'
+        }} ></div>
+    );
 
     return(
         <>

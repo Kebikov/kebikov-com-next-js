@@ -6,11 +6,6 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
     title: "Серии свадебных фотографий.",
     description: "На этой странице вы найдёте подборку свадебных фотосессий. Каждая история — это не просто фотографии, а живая хроника чувств, улыбок, волнительных взглядов и трогательных моментов.",
-    icons: [
-        {url: '/favicon/favicon.ico', sizes: '32x32', type: 'image/x-icon'},
-        {url: '/favicon/favicon-96x96.png', sizes: '96x96', type: 'image/png'},
-        {url: '/favicon/favicon-192x192.png', sizes: '192x192', type: 'image/png'}
-    ],
     openGraph: {
         title: 'Серии свадебных фотографий.',
         description: 'На этой странице вы найдёте подборку свадебных фотосессий. Каждая история — это не просто фотографии, а живая хроника чувств, улыбок, волнительных взглядов и трогательных моментов.',

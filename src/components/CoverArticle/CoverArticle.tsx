@@ -17,24 +17,22 @@ const CoverArticle: FC<IArticle> = ({
     const {picture, title, top, subtitle, link} = data;
 
     return(
-        <article className={styles.article} >
-            <div className={styles.article__body} >
-                <div className={styles.img} >
-                    <Image 
-                        src={picture.src}
-                        width={picture.width}
-                        height={picture.height}
-                        style={{top: top ?? `${top}%`}}
-                        placeholder='blur'
-                        blurDataURL={picture.blurDataURL}
-                        alt={picture.alt}
-                    />
-                </div>
-                <div className={styles.title} >{title}</div>
-                <div className={styles.subtitle} >{subtitle}</div>
-                <div className={styles.button} >
-                    <Link href={link} className={styles.link}>читать статью</Link>
-                </div>
+        <article className={styles.coverArticle} >
+            <div className={styles.img} >
+                <Image 
+                    src={picture.src}
+                    width={picture.width}
+                    height={picture.height}
+                    style={{top: top ?? `${top}%`}}
+                    placeholder='blur'
+                    blurDataURL={picture.blurDataURL}
+                    alt={picture.alt}
+                />
+            </div>
+            <div className={styles.title} >{title}</div>
+            <div className={styles.subtitle} >{subtitle}</div>
+            <div className={styles.button} >
+                <Link href={link} className={styles.link}>читать статью</Link>
             </div>
         </article>
     )
