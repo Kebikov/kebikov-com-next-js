@@ -1,0 +1,35 @@
+.photoRow {
+    & img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+    }
+}
+
+.body {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    
+    padding: 10px;
+
+    &:has(.evenNumber) {
+        @media (width < 600px){
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.evenNumber {
+    flex: 1 1 auto;
+    max-width: 300px;
+    @media (width < 600px){
+        flex: 1 1 48%;
+    }
+}
+
+.oddNumber {
+    flex: 1 1 auto;
+    max-width: 300px;
+}

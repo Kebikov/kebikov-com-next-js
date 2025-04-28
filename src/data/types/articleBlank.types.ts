@@ -6,4 +6,5 @@ export interface IDataArticleBlank {
     text: string | React.ReactNode;
     img: IImageCache;
     icon: string;
+    alt: string;
 }

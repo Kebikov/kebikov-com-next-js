@@ -18,7 +18,7 @@ const ArticleBlank: FC<IArticleBlank> = ({
     side = false
 }) => {
 
-    const {title, text, img, icon} = data;
+    const {title, text, img, icon, alt} = data;
 
     return(
             <section className={styles.articleBlank} >
@@ -31,7 +31,7 @@ const ArticleBlank: FC<IArticleBlank> = ({
                             placeholder='blur'
                             blurDataURL={img.blurDataURL}
                             priority={i === 0 || i === 1}
-                            alt={'изображение к статье'}
+                            alt={alt}
                         />
                     </div>
                 </div>

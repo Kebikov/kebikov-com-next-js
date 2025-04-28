@@ -2,7 +2,7 @@ import cache from '@cache/source__articles__beautifulWeddingFinale.json'
 import type { IDataArticleBlank } from './types/articleBlank.types';
 
 
-export const data: IDataArticleBlank[] = [
+export const dataBeautifulWeddingFinale: IDataArticleBlank[] = [
     {
         title: 'Семейный очаг',
         text: 
@@ -16,7 +16,8 @@ export const data: IDataArticleBlank[] = [
                 </p>
             </>,
         img: cache['1'],
-        icon: '/source/articles/numberIcon/1.png'
+        icon: '/source/articles/numberIcon/1.png',
+        alt: "Трогательная церемония зажжения семейного очага молодожёнами на свадьбе в Минске"
     },
     {
         title: 'Танец отца и дочери',
@@ -32,7 +33,8 @@ export const data: IDataArticleBlank[] = [
             </>
         ,
         img: cache['2'],
-        icon: '/source/articles/numberIcon/2.png'
+        icon: '/source/articles/numberIcon/2.png',
+        alt: "Эмоциональный момент танца невесты с отцом на свадебном вечере в Минске"
     },
     {
         title: 'Шарики',
@@ -46,7 +48,8 @@ export const data: IDataArticleBlank[] = [
             </>
         ,
         img: cache['3'],
-        icon: '/source/articles/numberIcon/3.png'
+        icon: '/source/articles/numberIcon/3.png',
+        alt: "Молодожёны и гости запускают воздушные шары в ночное небо на свадьбе в Минске"
     },
     {
         title: 'Китайские фонарики',
@@ -58,7 +61,8 @@ export const data: IDataArticleBlank[] = [
             </>
         ,
         img: cache['4'],
-        icon: '/source/articles/numberIcon/4.png'
+        icon: '/source/articles/numberIcon/4.png',
+        alt: "Красивый свадебный финал с запуском небесных фонариков, отражающихся в воде, на свадьбе в Минске"
     },
     {
         title: 'Светящиеся палочки',
@@ -70,7 +74,8 @@ export const data: IDataArticleBlank[] = [
             </>
         ,
         img: cache['5'],
-        icon: '/source/articles/numberIcon/5.png'
+        icon: '/source/articles/numberIcon/5.png',
+        alt: "Весёлый свадебный финал с молодожёнами и гостями, держащими разноцветные неоновые палочки в Минске"
     },
     {
         title: 'Фаер шоу',
@@ -82,7 +87,8 @@ export const data: IDataArticleBlank[] = [
             </>
         ,
         img: cache['6'],
-        icon: '/source/articles/numberIcon/6.png'
+        icon: '/source/articles/numberIcon/6.png',
+        alt: "Эффектное огненное шоу на открытом воздухе для молодожёнов и гостей на свадьбе в Минске"
     },
     {
         title: 'Торт',
@@ -93,7 +99,8 @@ export const data: IDataArticleBlank[] = [
             </>
         ,
         img: cache['7'],
-        icon: '/source/articles/numberIcon/7.png'
+        icon: '/source/articles/numberIcon/7.png',
+        alt: "Молодожёны и гости на торжественном разрезании многоярусного свадебного торта с ягодами на свадьбе в Минске"
     },
     {
         title: 'Салют',
@@ -104,7 +111,8 @@ export const data: IDataArticleBlank[] = [
             </>
         ,
         img: cache['8'],
-        icon: '/source/articles/numberIcon/8.png'
+        icon: '/source/articles/numberIcon/8.png',
+        alt: "Молодожёны и гости наслаждаются праздничным фейерверком в честь свадьбы в Минске"
     },
     {
         title: 'Холодные фонтаны',
@@ -118,7 +126,8 @@ export const data: IDataArticleBlank[] = [
             </>
         ,
         img: cache['9'],
-        icon: '/source/articles/numberIcon/9.png'
+        icon: '/source/articles/numberIcon/9.png',
+        alt: "Романтический первый танец молодожёнов под фонтанами холодных огней на свадьбе в Минске"
     },
     {
         title: 'Кораблики или венки',
@@ -130,7 +139,8 @@ export const data: IDataArticleBlank[] = [
             </>
         ,
         img: cache['10'],
-        icon: '/source/articles/numberIcon/10.png'
+        icon: '/source/articles/numberIcon/10.png',
+        alt: "Молодожёны и гости запускают светящиеся лодочки на воде в честь завершения свадьбы в Минске"
     },
     {
         title: 'Бенгальские огни',
@@ -149,7 +159,8 @@ export const data: IDataArticleBlank[] = [
             </>
         ,
         img: cache['11'],
-        icon: '/source/articles/numberIcon/11.png'
+        icon: '/source/articles/numberIcon/11.png',
+        alt: "Молодожёны проходят сквозь коридор из бенгальских огней, зажжённых гостями на свадьбе в Минске"
     },
     {
         title: 'Свечи',
@@ -162,7 +173,8 @@ export const data: IDataArticleBlank[] = [
             </>
         ,
         img: cache['12'],
-        icon: '/source/articles/numberIcon/12.png'
+        icon: '/source/articles/numberIcon/12.png',
+        alt: "Молодожёны проходят через живой коридор из гостей с зажжёнными свечами на свадьбе в Минске"
     },
     {
         title: 'Телефон',
@@ -173,7 +185,8 @@ export const data: IDataArticleBlank[] = [
             </>
         ,
         img: cache['13'],
-        icon: '/source/articles/numberIcon/13.png'
+        icon: '/source/articles/numberIcon/13.png',
+        alt: "Телефон с включённой вспышкой для создания светового коридора на свадьбе в Минске"
     },
     {
         title: 'Танец',
@@ -184,7 +197,8 @@ export const data: IDataArticleBlank[] = [
             </>
         ,
         img: cache['14'],
-        icon: '/source/articles/numberIcon/14.png'
+        icon: '/source/articles/numberIcon/14.png',
+        alt: "Эффектный свадебный выход молодожёнов с фонтанами холодных огней на пляжной церемонии в Минске"
     },
     {
         title: 'Благодарственные слова',
@@ -202,6 +216,7 @@ export const data: IDataArticleBlank[] = [
             </>
         ,
         img: cache['15'],
-        icon: '/source/articles/numberIcon/15.png'
+        icon: '/source/articles/numberIcon/15.png',
+        alt: "Молодожёны благодарят гостей за чудесный свадебный день на банкете в Минске"
     }
 ]

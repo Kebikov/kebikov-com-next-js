@@ -7,5 +7,6 @@ export const foldersForChache: Array<string> = [
     'source/articles/bouquetRoll',
     'source/articles/preparationsWedding',
     'source/articles/fromThePhotographer',
-    'source/articles/perfectWeddingPhotoSession'
+    'source/articles/perfectWeddingPhotoSession',
+    'source/articles/accessories'
 ]

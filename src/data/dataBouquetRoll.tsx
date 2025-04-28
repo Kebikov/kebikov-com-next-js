@@ -13,7 +13,8 @@ export const dataBouquetRoll: IDataArticleBlank[] = [
             </>
         ,
         img: cache['1'],
-        icon: '/source/articles/numberIcon/1.png'
+        icon: '/source/articles/numberIcon/1.png',
+        alt: "Осенний свадебный букет с розами и ягодами на фоне деревянной стены в Минске"
     },
     {
         title: 'Свадебная рулетка',
@@ -24,7 +25,8 @@ export const dataBouquetRoll: IDataArticleBlank[] = [
             </>
         ,
         img: cache['2'],
-        icon: '/source/articles/numberIcon/2.png'
+        icon: '/source/articles/numberIcon/2.png',
+        alt: "Рулетка и стол для игры в казино в концепции оригинального броска свадебного букета в Минске"
     },
     {
         title: 'Всем поровну',
@@ -35,7 +37,8 @@ export const dataBouquetRoll: IDataArticleBlank[] = [
             </>
         ,
         img: cache['3'],
-        icon: '/source/articles/numberIcon/3.png'
+        icon: '/source/articles/numberIcon/3.png',
+        alt: "Миниатюрные бутоньерки с розами и зеленью для гостей на свадьбе в Минске"
     },
     {
         title: 'Испытание временем',
@@ -46,7 +49,8 @@ export const dataBouquetRoll: IDataArticleBlank[] = [
             </>
         ,
         img: cache['4'],
-        icon: '/source/articles/numberIcon/4.png'
+        icon: '/source/articles/numberIcon/4.png',
+        alt: "Свадебные туфли невесты с именами подруг на подошвах в традиции свадебных обрядов в Минске"
     },
     {
         title: 'Счастливое пирожное',
@@ -57,7 +61,8 @@ export const dataBouquetRoll: IDataArticleBlank[] = [
             </>
         ,
         img: cache['5'],
-        icon: '/source/articles/numberIcon/5.png'
+        icon: '/source/articles/numberIcon/5.png',
+        alt: "Яркие свадебные десерты с клубникой на оригинальной свадьбе в Минске"
     },
     {
         title: 'Ленточка',
@@ -68,7 +73,8 @@ export const dataBouquetRoll: IDataArticleBlank[] = [
             </>
         ,
         img: cache['6'],
-        icon: '/source/articles/numberIcon/6.png'
+        icon: '/source/articles/numberIcon/6.png',
+        alt: "Невеста и подруги на свадьбе в Минске играют в оригинальный способ бросания букета с лентами"
     },
     {
         title: 'Замочек',
@@ -79,7 +85,8 @@ export const dataBouquetRoll: IDataArticleBlank[] = [
             </>
         ,
         img: cache['7'],
-        icon: '/source/articles/numberIcon/7.png'
+        icon: '/source/articles/numberIcon/7.png',
+        alt: "Деревянный сундук для оригинального розыгрыша свадебного букета на свадьбе в Минске"
     },
     {
         title: 'Свадебный квест',
@@ -93,6 +100,7 @@ export const dataBouquetRoll: IDataArticleBlank[] = [
             </>
         ,
         img: cache['8'],
-        icon: '/source/articles/numberIcon/8.png'
+        icon: '/source/articles/numberIcon/8.png',
+        alt: "Винтажные часы, сундуки и ключ на свадебном квесте для броска букета в Минске"
     }
 ]

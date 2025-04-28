@@ -18,7 +18,8 @@ export const dataPerfectWeddingPhotoSession: IDataArticleBlank[] = [
             </>
         ,
         img: cache['1'],
-        icon: '/source/articles/numberIcon/1.png'
+        icon: '/source/articles/numberIcon/1.png',
+        alt: "Жених и невеста улыбаются и показывают большие пальцы вверх, позируя для свадебной фотосессии"
     },
     {
         title: 'Гости на прогулке.',
@@ -32,7 +33,8 @@ export const dataPerfectWeddingPhotoSession: IDataArticleBlank[] = [
             </>
         ,
         img: cache['2'],
-        icon: '/source/articles/numberIcon/2.png'
+        icon: '/source/articles/numberIcon/2.png',
+        alt: "Гости на свадьбе играют в настольные игры на свежем воздухе, создавая атмосферу радости и непринуждённости"
     },
     {
         title: 'А можно с вами ?', 
@@ -49,7 +51,8 @@ export const dataPerfectWeddingPhotoSession: IDataArticleBlank[] = [
             </>
         ,
         img: cache['3'],
-        icon: '/source/articles/numberIcon/3.png'
+        icon: '/source/articles/numberIcon/3.png',
+        alt: "Жених и невеста целуются на фоне радостных гостей, которые поднимают руки и букеты в воздух, создавая атмосферу праздника"
     },
     {
         title: 'Что взять ?',
@@ -67,7 +70,8 @@ export const dataPerfectWeddingPhotoSession: IDataArticleBlank[] = [
             </>
         ,
         img: cache['4'],
-        icon: '/source/articles/numberIcon/4.png'
+        icon: '/source/articles/numberIcon/4.png',
+        alt: "Разложенные на полу туристические вещи, включая рюкзаки, обувь, одежду, снаряжение и фотокамеру, подготовленные для похода"
     },
     {
         title: 'Покупка одноразовой тары.',
@@ -78,7 +82,8 @@ export const dataPerfectWeddingPhotoSession: IDataArticleBlank[] = [
             </>
         ,
         img: cache['5'],
-        icon: '/source/articles/numberIcon/5.png'
+        icon: '/source/articles/numberIcon/5.png',
+        alt: "Набор одноразовой эко-посуды из крафт-бумаги, включая стаканчики, тарелки, вилки и упаковочные пакеты на фоне зелени"
     },
     {
         title: 'Свидетели- ваши главные помощники !',
@@ -95,7 +100,8 @@ export const dataPerfectWeddingPhotoSession: IDataArticleBlank[] = [
             </>
         ,
         img: cache['6'],
-        icon: '/source/articles/numberIcon/6.png'
+        icon: '/source/articles/numberIcon/6.png',
+        alt: "Невеста в белом платье с букетом и подружки невесты в нежных платьях пастельных тонов позируют вместе, улыбаются и держат венки из зелени"
     },
     {
         title: 'А что если дождь ?',
@@ -117,6 +123,7 @@ export const dataPerfectWeddingPhotoSession: IDataArticleBlank[] = [
             </>
         ,
         img: cache['7'],
-        icon: '/source/articles/numberIcon/7.png'
+        icon: '/source/articles/numberIcon/7.png',
+        alt: "Жених и невеста целуются под дождём на фоне живописного пейзажа, а друзья держат над ними чёрные зонты"
     },
 ];
