@@ -9,5 +9,13 @@ export const foldersForChache: Array<string> = [
     'source/articles/fromThePhotographer',
     'source/articles/perfectWeddingPhotoSession',
     'source/articles/accessories',
-    'source/wedding/MY'
+    'source/wedding/MY',
+    'source/wedding/PT',
+    'source/wedding/DA',
+    'source/wedding/DK',
+    'source/wedding/JD',
+    'source/wedding/SD',
+    'source/wedding/SY',
+    'source/wedding/SL',
+    'source/wedding/NK'
 ]
