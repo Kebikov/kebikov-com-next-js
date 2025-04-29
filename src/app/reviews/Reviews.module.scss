@@ -1,0 +1,9 @@
+.reviews {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.reviews >*:not(:first-child) {
+    margin-top: 20px;
+}
+
