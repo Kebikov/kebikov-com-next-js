@@ -1,0 +1,21 @@
+.aboutMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 1000px){
+        flex-wrap: wrap;
+    }
+}
+
+
+
+

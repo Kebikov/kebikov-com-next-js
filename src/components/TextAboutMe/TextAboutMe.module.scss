@@ -1,0 +1,24 @@
+.text {
+    flex: 0 1 50%;
+
+    margin: 0px 0px 0px -50px;
+    background-color: var(--color-bark-green__to__color-black-3);
+    padding: 20px;
+    border-radius: 20px;
+
+    font-family: 'Hand';
+    font-size: clamp(24px, 1.1vw, 26px);
+    font-weight: 400;
+    color: var(--color-light-1);
+    line-height: 140%;
+    white-space: pre-line;
+
+    @media (max-width: 1200px){
+        flex: 0 1 60%;
+    }
+    @media (max-width: 900px){
+        flex: 0 1 100%;
+        padding: 20px 10px 20px 10px;
+        margin: 0px 10px 20px 10px;
+    }
+}
