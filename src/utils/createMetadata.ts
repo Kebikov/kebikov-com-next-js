@@ -41,4 +41,5 @@ const createMetadata = ({
     }
 };
 
+
 export default createMetadata;

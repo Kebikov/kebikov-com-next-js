@@ -1,16 +1,13 @@
-"use client";
-
-import styles from './Wedding.module.scss';
 import Image from 'next/image';
 import dataWeddingSeries from "@/data/weddingSeries/dataWeddingSeries";
-import type { TSeries } from "@/data/weddingSeries/types";
 import WeddingSeries from '@/components/WeddingSeries/WeddingSeries';
-import { useParams } from 'next/navigation';
+import styles from './Wedding.module.scss';
+import type { TPropsWedding } from './layout';
 
 
-const Wedding = () => {
+const Wedding = async ({params}: TPropsWedding) => {
 
-    const {slug} = useParams<{slug: TSeries}>();
+    const {slug} = await params;
     const data = dataWeddingSeries[slug];
     const imagesKeys = Object.keys(data.images);
 
@@ -63,10 +60,16 @@ const Wedding = () => {
             </div>
         </>
     )
-}
+};
 
 
 export default Wedding;
+
+
+
+
+
+
 
 
 

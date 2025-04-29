@@ -13,7 +13,7 @@ export const metadata = createMetadata({
 
 
 const WeddingsAll = () => {
-
+    console.log('WeddingsAll');
     return(
             <>
                 <div className="container" >
