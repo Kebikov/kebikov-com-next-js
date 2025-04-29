@@ -17,16 +17,12 @@ export const metadata = createMetadata({
 const AboutMe = () => {
 
     return(
-        <>
-            <div className="container" >
-                <div className={styles.aboutMe} >
-                    <div className={styles.body} >
-                        <ImageAboutMe/>
-                        <TextAboutMe/>
-                    </div>
-                </div>
+        <div className={styles.aboutMe} >
+            <div className={styles.body} >
+                <ImageAboutMe/>
+                <TextAboutMe/>
             </div>
-        </>
+        </div>
     )
 }
 
