@@ -1,15 +1,27 @@
+$reviewsItem-width: 700px;
+
+
 .reviewsItem {
     padding: 40px 60px;
     background-color: var(--color-light-2__to__color-black-2);
     border-radius: 10px;
+
+    @media (width < $reviewsItem-width) {
+        padding: 20px;
+    }
 }
 
 .top {
     display: flex;
+    justify-content: center;
+
+    @media (width < $reviewsItem-width) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .picture {
-
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -29,13 +41,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @media (width < $reviewsItem-width) {
+        text-align: center;
+    }
 }
 
 .name {
     font-family: 'Mont';
-    font-size: 22px;
+    font-size: clamp(18px, 1.05vw, 22px);
     font-weight: 700;
     color: var(--color-green__to__color-orange);
+
+    @media (width < $reviewsItem-width) {
+        margin-top: 10px;
+    }
 }
 
 .link {
@@ -45,6 +65,10 @@
     font-weight: 700;
     color: var(--color-green__to__color-orange);
     opacity: .6;
+
+    @media (width < $reviewsItem-width) {
+        margin-top: 5px;
+    }
 }
 
 .text {
@@ -54,5 +78,9 @@
     font-size: 24px;
     line-height: 130%;
     color: var(--color-bark-green__to__color-light-2);
+
+    @media (width < $reviewsItem-width) {
+        margin-top: 10px;
+    }
 }
 

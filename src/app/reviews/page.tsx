@@ -21,9 +21,9 @@ const Reviews = () => {
 
                 <div className="container">
                     <div className={style.reviews} >
-                        <ReviewsItem item={dataReviews[0]} />
-                        <ReviewsItem item={dataReviews[1]} />
-                        <ReviewsItem item={dataReviews[2]} />
+                        {
+                            dataReviews.map(item => <ReviewsItem item={item} key={item.name} />)
+                        }
                     </div>
                     {/* <LineTotalReviews/>
                     <GellaryReviews/> */}
