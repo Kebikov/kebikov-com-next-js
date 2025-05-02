@@ -1,9 +1,8 @@
-import style from './Reviews.module.scss';
-import GellaryReviews from '@/components/GellaryReviews/GellaryReviews';
-import LineTotalReviews from '@/components/LineTotalReviews/LineTotalReviews';
 import createMetadata from '@/utils/createMetadata';
+import style from './Reviews.module.scss';
 import { dataReviews } from '@/data/dataReviews';
 import ReviewsItem from '@/components/ReviewsItem/ReviewsItem';
+
 
 export const metadata = createMetadata({
     title: "Отзывы Клиентов. О Свадебном фотографе Евгений Кебиков.",
@@ -15,22 +14,15 @@ export const metadata = createMetadata({
 
 
 const Reviews = () => {
-    
-    return(
-            <>
 
-                <div className="container">
-                    <div className={style.reviews} >
-                        {
-                            dataReviews.map(item => <ReviewsItem item={item} key={item.name} />)
-                        }
-                    </div>
-                    {/* <LineTotalReviews/>
-                    <GellaryReviews/> */}
-                </div>
-                
-            </>
-            
+    return (
+        <div className="container">
+            <div className={style.reviews} >
+                {
+                    dataReviews.map(item => <ReviewsItem item={item} key={item.name} />)
+                }
+            </div>
+        </div>
     )
 }
 

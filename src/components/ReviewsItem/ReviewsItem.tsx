@@ -1,10 +1,11 @@
 "use client";
 
 import styles from './ReviewsItem.module.scss';
-import { useRef, useEffect } from 'react';
+import { motion, useScroll, useInView, useTransform } from 'framer-motion';
 import { IDataReviews } from '@/data/dataReviews';
-import { FC } from 'react';
+import { FC, useRef } from 'react';
 import Image from 'next/image';
+
 
 interface IReviewsItem {
     item: IDataReviews;
@@ -16,10 +17,40 @@ const ReviewsItem: FC<IReviewsItem> = ({
     item
 }) => {
 
+    const refBody = useRef(null);
+    const refItem = useRef(null);
+
+    const inView = useInView(refItem);
+
+    const { scrollYProgress } = useScroll({
+        target: refBody,
+        offset: ["start end", "end end"]
+    });
+
+    const scale = useTransform(scrollYProgress, [0, 1], [0.2, 1]);
+
     const {image, text, name, url} = item;
 
     return(
-        <div className={styles.reviewsItem} >
+        <motion.div 
+            initial={{opacity: 0}}
+            animate={inView ? {opacity: 1} : undefined}
+            transition={{
+                duration: .7
+            }}
+            viewport={{amount: .2, once: true}}
+            style={{
+                scale: scale,
+                transformOrigin: "center top",
+                position: 'relative'
+            }}
+            className={styles.reviewsItem} 
+            ref={refItem}
+        >
+            <div 
+                className={styles.point}
+                ref={refBody} 
+            />
             <div className={styles.top} >
                 <div className={styles.picture} >
                     <Image
@@ -38,9 +69,11 @@ const ReviewsItem: FC<IReviewsItem> = ({
             <div className={styles.text} >
                 {text}
             </div>
-        </div>
+        </motion.div>
     )
 }
 
 
 export default ReviewsItem;
+
+
