@@ -17,5 +17,6 @@ export const foldersForChache: Array<string> = [
     'source/wedding/SD',
     'source/wedding/SY',
     'source/wedding/SL',
-    'source/wedding/NK'
+    'source/wedding/NK',
+    'source/price'
 ]

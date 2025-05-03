@@ -1,0 +1,9 @@
+.error {
+    z-index: 5;
+    color: rgb(255, 40, 40);
+    font-size: clamp(15px, 0.8vw,18px);
+    margin: -20px 0px 0px 0px;
+    font-family: 'Mont';
+    font-weight: 600;
+    text-transform: lowercase;
+}

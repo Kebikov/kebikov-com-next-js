@@ -2,6 +2,7 @@ import styles from './Question.module.scss';
 import type { IDataQuestion } from "@/data/dataQuestion";
 import { FC } from "react";
 import clsx from 'clsx';
+import { motion } from 'framer-motion';
 
 
 interface IQuestion {
@@ -19,6 +20,7 @@ const Question: FC<IQuestion> = ({
     id
 }) => {
 
+
     const onClick = () => {
         currentId === id ? setCurrentId(undefined) : setCurrentId(id);
     }
@@ -29,14 +31,23 @@ const Question: FC<IQuestion> = ({
             onClick={onClick} 
         >
             <div className={styles.line} />
-            <h2 className={clsx(styles.case,currentId === id && styles.rotate)} >
+            <h2 className={clsx(styles.case, currentId === id && styles.rotate)} >
                 {item.case}
             </h2>
-            <div className={clsx(styles.answer,currentId === id && styles.rotate)}>
-                {item.answer}
-            </div>
+                <motion.div 
+                    layout
+                    initial={{ height: 0 }}
+                    animate={{ height: currentId === id ? 'auto' : 0}}
+                    transition={{ duration: 0.4, ease: 'easeInOut' }}
+                    className={styles.answer}
+                >
+                    <div className={styles.blockAnswer} >
+                        {item.answer}
+                    </div>
+                </motion.div>
         </div>
     )
 }
+
 
 export default Question;

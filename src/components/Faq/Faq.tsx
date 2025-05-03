@@ -6,11 +6,13 @@ import { dataQuestion } from '@/data/dataQuestion';
 import Question from '../Question/Question';
 
 
+
 const Faq: FC = () => {
 
     const [currentId, setCurrentId] = useState<number>();
-
+    console.log(currentId);
     return(
+        <>
         <div className={styles.faq} >
             <div className={styles.body} >
                 <h1 className={styles.h1} >
@@ -35,6 +37,7 @@ const Faq: FC = () => {
             </div>
             <div className={styles.borderBottom} />
         </div>
+        </>
     )
 }
 
