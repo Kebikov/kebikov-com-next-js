@@ -1,0 +1,14 @@
+.contacts {
+    background-color: var(--color-light-1__to__color-black-1);
+}
+
+.info {
+    display: flex;
+    margin: 0px 0px 40px 0px;
+    @media (max-width: 1020px){
+        flex-wrap: wrap;
+    }
+}
+
+
+
