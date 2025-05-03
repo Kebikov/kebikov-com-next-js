@@ -1,6 +1,5 @@
 "use client";
 
-
 import styles from  './MenuDesktop.module.scss';
 import LinkMenu from '../LinkMenu/LinkMenu';
 import menuData from '../../data/dataLinks';

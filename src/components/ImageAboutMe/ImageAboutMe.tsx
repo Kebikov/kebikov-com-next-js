@@ -34,6 +34,7 @@ const ImageAboutMe = () => {
                 src={'/source/aboutMe/me.jpg'}
                 width={800}
                 height={1000}
+                priority
                 alt='свадебный фотограф в Минске'
             />
         </motion.div>
