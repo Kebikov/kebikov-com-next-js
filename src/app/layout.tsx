@@ -6,6 +6,7 @@ import WrapperProviderRedux from "@/components/WrapperProviderRedux/WrapperProvi
 import WrapperTheme from "@/components/WrapperTheme/WrapperTheme";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import PopupTheme from "@/components/PopupTheme/PopupTheme";
 
 
 
@@ -45,6 +46,7 @@ export default function RootLayout({
                 <WrapperProviderRedux> 
                     <WrapperTheme>
                         <div className={styles.wrapper} >
+                            <PopupTheme/>
                             <Header/>
                             <main className={styles.main} >
                                 {children}
