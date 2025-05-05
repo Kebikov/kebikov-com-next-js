@@ -1,15 +1,15 @@
 "use client";
 
-
 import styles from './MainImage.module.scss';
 import Image from "next/image";
 import { useWindowSize } from 'react-use';
 import { useEffect, useState } from 'react';
+import cache from '@cache/source__headerImage.json';
 
 
 interface IImage {
     type: 'desktop' | 'mobile';
-    url: string;
+    src: string;
     width: number;
     height: number;
 }
@@ -17,16 +17,16 @@ interface IImage {
 
 const desktop: IImage = {
     type: 'desktop',
-    url: '/source/headerImage/desktop.jpg',
-    width: 2560,
-    height: 823
+    src: cache.desktop.src,
+    width: cache.desktop.width,
+    height: cache.desktop.height
 };
 
 const mobile: IImage = {
     type: 'mobile',
-    url: '/source/headerImage/mobile.jpg',
-    width: 1000,
-    height: 1431
+    src: cache.mobile.src,
+    width: cache.mobile.width,
+    height: cache.mobile.height
 }
 
 const point = 750;
@@ -55,9 +55,9 @@ const MainImage = () => {
     if(!image?.type) return null;
     
     return(
-        <div className={styles.container}>
+        <div className={styles.container} >
             <Image
-                src={image.url}
+                src={image.src}
                 width={image.width}
                 height={image.height}
                 sizes="

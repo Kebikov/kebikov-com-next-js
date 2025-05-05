@@ -2,11 +2,12 @@ import styles from './HeaderImage.module.scss';
 import clsx from 'clsx';
 import MainImage from '../MainImage/MainImage';
 
+
 const HeaderImage = () => {
 
     return(
-        <div className={styles.headerImage}>
-            <div className={styles.headerImage__body}>
+        <div className={styles.headerImage} >
+            <div className={styles.headerImage__body} >
                 <MainImage/>
                 <Hello/>
             </div>
@@ -19,7 +20,7 @@ const Hello = () => {
 
     return(
         <div className={styles.hello} >
-            <div className={styles.hello__body}>
+            <div className={styles.hello__body} >
                 <div className={styles.hello__hi} >
                     ПРИВЕТ !
                 </div>
