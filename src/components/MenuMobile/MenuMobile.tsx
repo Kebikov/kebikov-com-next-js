@@ -4,7 +4,7 @@ import styles from './MenuMobile.module.scss';
 import LinkMenu from "../LinkMenu/LinkMenu";
 import { useDispatch } from 'react-redux';
 import { SET_ACTIVE_MENU } from '../../redux/slice/indexSlice';
-import menuData from '../../data/dataLinks';
+import menuData from '../../data/dataLink';
 import { useAppSelector } from '@/redux/store/hooks';
 import ToggleTheme from '../ToggleTheme/ToggleTheme';
 import Burger from '@/components/Burger/Burger';

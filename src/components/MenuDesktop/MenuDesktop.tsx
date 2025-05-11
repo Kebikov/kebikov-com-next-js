@@ -2,7 +2,7 @@
 
 import styles from  './MenuDesktop.module.scss';
 import LinkMenu from '../LinkMenu/LinkMenu';
-import menuData from '../../data/dataLinks';
+import menuData from '../../data/dataLink';
 import Link from 'next/link';
 import Image from 'next/image';
 import { useAppSelector } from '@/redux/store/hooks';

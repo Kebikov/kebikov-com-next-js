@@ -3,7 +3,7 @@
 import styles from './LinkMenu.module.scss';
 import Link from 'next/link';
 import { usePathname } from "next/navigation";
-import { TMenuData } from '@/data/dataLinks';
+import { TMenuData } from '@/data/dataLink';
 import { FC } from 'react';
 import { useAppDispatch } from '@/redux/store/hooks';
 import { SET_ACTIVE_MENU } from '@/redux/slice/indexSlice';
