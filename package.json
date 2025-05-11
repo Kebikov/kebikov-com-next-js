@@ -6,7 +6,9 @@
         "dev": "next dev --turbopack",
         "build": "next build",
         "start": "next start",
+        "start1": "NODE_ENV=production node server.js",
         "lint": "next lint",
+        "server": "npx tsx server.js",
         "cache": "npx tsx src/cache/utils/createCacheImages.ts"
     },
     "dependencies": {
